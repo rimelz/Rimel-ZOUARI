@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rimel Zouari · Data Science & IA</title>
+  <meta name="description" content="Rimel Zouari — élève ingénieure en génie informatique, spécialisée en Data Science & Intelligence Artificielle. Sousse, Tunisie." />
+  <meta property="og:title" content="Rimel Zouari · Data Science & IA" />
+  <meta property="og:description" content="Élève ingénieure en génie informatique — Data Science & Intelligence Artificielle." />
+  <meta name="theme-color" content="#0b0f24" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;1,400&family=Geist+Mono:wght@400;500&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="is-loading">
+
+  <!-- Loader -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__scene">
+      <span class="loader__sun"></span>
+      <span class="loader__horizon"></span>
+    </div>
+    <div class="loader__name"><span class="m"><span>Rimel</span></span> <span class="m"><em>Zouari</em></span></div>
+    <div class="loader__meta mono"><span>Portfolio — 2026</span><span data-count>000</span></div>
+  </div>
+
+  <!-- Scene -->
+  <canvas class="sky" id="sky" aria-hidden="true"></canvas>
+  <div class="veil" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"><i class="cursor__dot"></i><i class="cursor__ring"></i></div>
+
+  <!-- Header -->
+  <header class="nav" data-nav>
+    <a class="brand" href="#top" data-link aria-label="Rimel Zouari — accueil">
+      <span class="brand__mark" aria-hidden="true">
+        <span class="brand__ring"></span>
+        <span class="brand__letters"><span>R</span><em>z</em></span>
+        <span class="brand__orbit" data-orbit><i></i></span>
+      </span>
+      <span class="brand__word"><span>Rimel</span> <em>Zouari</em></span>
+    </a>
+
+    <div class="nav__status" aria-live="polite">
+      <span class="nav__section"><span class="nav__swap" data-section-label>Accueil</span></span>
+      <span class="nav__sep"></span>
+      <span class="nav__time mono">Sousse <span data-clock-short>--:--</span></span>
+    </div>
+
+    <div class="nav__actions">
+      <button class="nav__menu" type="button" data-menu-open aria-expanded="false" aria-controls="menu">
+        <span class="nav__burger"><i></i><i></i></span><span>Menu</span>
+      </button>
+      <a class="nav__cta" href="#contact" data-link data-magnetic>Contact</a>
+    </div>
+    <span class="nav__progress" aria-hidden="true"><i data-progress></i></span>
+  </header>
+
+  <!-- Menu -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <div class="menu__inner">
+      <div class="menu__top mono"><span>Menu</span><button type="button" data-menu-close>Fermer ✕</button></div>
+      <ol class="menu__list">
+        <li><a href="#top" data-link><span class="mono">00</span><span class="menu__t">Accueil</span></a></li>
+        <li><a href="#profil" data-link><span class="mono">01</span><span class="menu__t">Profil</span></a></li>
+        <li><a href="#experience" data-link><span class="mono">02</span><span class="menu__t">Expérience</span></a></li>
+        <li><a href="#formation" data-link><span class="mono">03</span><span class="menu__t">Formation</span></a></li>
+        <li><a href="#competences" data-link><span class="mono">04</span><span class="menu__t">Compétences</span></a></li>
+        <li><a href="#certifications" data-link><span class="mono">05</span><span class="menu__t">Certifications</span></a></li>
+        <li><a href="#langues" data-link><span class="mono">06</span><span class="menu__t">Langues</span></a></li>
+        <li><a href="#contact" data-link><span class="mono">07</span><span class="menu__t"><em>Contact</em></span></a></li>
+      </ol>
+      <div class="menu__foot mono">
+        <a href="mailto:rymelzouari@gmail.com">rymelzouari@gmail.com</a>
+        <a href="https://linkedin.com/in/rimel-zouari" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://github.com/rimelz" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section rail -->
+  <nav class="rail" aria-label="Sections">
+    <span class="rail__line"><i data-rail-fill></i></span>
+    <ol>
+      <li><a href="#top" data-link data-rail="0"><span>Accueil</span></a></li>
+      <li><a href="#profil" data-link data-rail="1"><span>Profil</span></a></li>
+      <li><a href="#experience" data-link data-rail="2"><span>Expérience</span></a></li>
+      <li><a href="#formation" data-link data-rail="3"><span>Formation</span></a></li>
+      <li><a href="#competences" data-link data-rail="4"><span>Compétences</span></a></li>
+      <li><a href="#certifications" data-link data-rail="5"><span>Certifications</span></a></li>
+      <li><a href="#langues" data-link data-rail="6"><span>Langues</span></a></li>
+      <li><a href="#contact" data-link data-rail="7"><span>Contact</span></a></li>
+    </ol>
+  </nav>
+
+  <main id="top">
+
+    <!-- ======================= HERO ======================= -->
+    <section class="hero" data-story data-sky="dawn" data-hour="6" data-label="Accueil">
+      <div class="hero__stage">
+        <div class="hero__coords mono">
+          <div><span class="dim">Sousse</span><span data-coord="35.8256° N, 10.6084° E">35.8256° N, 10.6084° E</span></div>
+          <div class="hero__coords-mid"><span class="dim">Heure locale</span><span data-clock>--:--</span></div>
+          <div><span class="dim">Tunisie</span><span data-coord="35.7643° N, 10.8113° E">35.7643° N, 10.8113° E</span></div>
+        </div>
+
+        <div class="hero__center" data-hero-a>
+          <p class="hero__kicker mono" data-intro>Portfolio — 2026</p>
+          <h1 class="hero__name" data-fit>
+            <span class="fit"><span class="hero__first" data-chars>Rimel</span> <em class="hero__last" data-chars>Zouari</em></span>
+          </h1>
+          <p class="hero__role" data-intro>Élève ingénieure en génie informatique <span class="dim">|</span> Data Science &amp; Intelligence Artificielle</p>
+        </div>
+
+        <div class="hero__story" data-hero-b>
+          <p class="scrub scrub--hero" data-hero-scrub>Transformer les données en <em>solutions intelligentes.</em></p>
+        </div>
+
+        <div class="hero__bottom" data-hero-a>
+          <div class="hero__links" data-intro>
+            <a href="mailto:rymelzouari@gmail.com" class="pill" data-magnetic>Me contacter</a>
+            <a href="https://linkedin.com/in/rimel-zouari" target="_blank" rel="noopener" class="pill pill--ghost" data-magnetic>LinkedIn ↗</a>
+            <a href="https://github.com/rimelz" target="_blank" rel="noopener" class="pill pill--ghost" data-magnetic>GitHub ↗</a>
+          </div>
+          <div class="hero__scroll mono" data-intro><span>Défiler</span><i></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= 01 PROFIL ======================= -->
+    <section class="chapter" id="profil" data-story data-sky="morning" data-hour="8" data-label="Profil">
+      <div class="wrap">
+        <header class="chapter__head grid">
+          <div class="chapter__meta mono"><span class="chip">01</span><span class="dim">Profil</span></div>
+          <div class="chapter__titles">
+            <h2 class="chapter__title" data-split>Profil</h2>
+            <p class="scrub">Élève ingénieure en 5ème année en informatique, spécialisée en Data Science et IA. Passionnée par l’analyse de données et l’IA, j’aime transformer les données en <em>solutions intelligentes.</em></p>
+          </div>
+        </header>
+
+        <div class="profile grid">
+          <div class="profile__body">
+            <ul class="traits" data-fade>
+              <li><em>Curieuse.</em></li>
+              <li><em>Rigoureuse.</em></li>
+              <li><em>Motivée.</em></li>
+            </ul>
+            <p class="lead" data-fade>Curieuse, rigoureuse et motivée, je souhaite continuer à apprendre et à contribuer à des projets concrets.</p>
+          </div>
+        </div>
+
+        <ul class="stats">
+          <li class="stat" data-fade><span class="stat__n"><span data-countup="5">5</span><sup>e</sup></span><span class="stat__l mono">Année du cycle ingénieur</span></li>
+          <li class="stat" data-fade><span class="stat__n" data-countup="2">2</span><span class="stat__l mono">Stages en entreprise</span></li>
+          <li class="stat" data-fade><span class="stat__n" data-countup="5">5</span><span class="stat__l mono">Certifications &amp; formations</span></li>
+          <li class="stat" data-fade><span class="stat__n" data-countup="8">8</span><span class="stat__l mono">Domaines de compétences</span></li>
+        </ul>
+
+        <figure class="panel" data-panel="plexus" data-fade>
+          <canvas></canvas>
+          <div class="panel__title">Données <span class="panel__x">→</span> <em>décisions</em></div>
+          <figcaption class="panel__cap mono"><span>Data Science &amp; IA</span><span>Sousse, Tunisie</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ======================= 02 EXPÉRIENCE ======================= -->
+    <section class="chapter" id="experience" data-story data-sky="late" data-hour="10.5" data-label="Expérience">
+      <div class="wrap">
+        <header class="chapter__head grid">
+          <div class="chapter__meta mono"><span class="chip">02</span><span class="dim">Expérience professionnelle</span></div>
+          <div class="chapter__titles">
+            <h2 class="chapter__title" data-split>Expérience <em>professionnelle</em></h2>
+          </div>
+        </header>
+
+        <figure class="panel panel--wide" data-panel="aurora" data-fade>
+          <canvas></canvas>
+          <div class="panel__title">Python <span class="panel__x">×</span> <em>Machine Learning</em></div>
+          <figcaption class="panel__cap mono"><span>2 stages · Sousse</span><span>2025 — 2026</span></figcaption>
+        </figure>
+
+        <ol class="timeline">
+          <li class="tl grid" data-fade>
+            <div class="tl__date"><span class="tl__year">2026</span><span class="mono dim">07/2026 – 09/2026 · Sousse</span></div>
+            <div class="tl__body">
+              <span class="chip chip--ghost mono">Stage d’été</span>
+              <h3>BMZ Consulting</h3>
+              <p class="tl__sub">Conseil IT et transformation digitale, spécialisé dans les technologies Microsoft</p>
+              <p class="tl__text">Mise en pratique de mes compétences en Python et Machine Learning à travers le développement d’un MVP de système intelligent de recommandation de produits, visant à personnaliser les suggestions selon les préférences des utilisateurs.</p>
+              <ul class="tags mono"><li>Python</li><li>Machine Learning</li><li>Recommandation</li><li>MVP</li></ul>
+            </div>
+          </li>
+          <li class="tl grid" data-fade>
+            <div class="tl__date"><span class="tl__year">2025</span><span class="mono dim">07/2025 – 08/2025 · Sousse</span></div>
+            <div class="tl__body">
+              <span class="chip chip--ghost mono">Stage d’été</span>
+              <h3>FLEXITEK</h3>
+              <p class="tl__sub">Concepteur de sites web à Sousse</p>
+              <p class="tl__text">Découverte du monde professionnel et mise en pratique des compétences techniques en utilisant Python, notamment à travers la conception d’un outil d’import/export de données.</p>
+              <ul class="tags mono"><li>Python</li><li>Import / Export</li><li>Données</li></ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ======================= 03 FORMATION ======================= -->
+    <section class="chapter" id="formation" data-story data-sky="midday" data-hour="13" data-label="Formation">
+      <div class="wrap">
+        <header class="chapter__head grid">
+          <div class="chapter__meta mono"><span class="chip">03</span><span class="dim">Formation académique</span></div>
+          <div class="chapter__titles">
+            <h2 class="chapter__title" data-split>Formation <em>académique</em></h2>
+          </div>
+        </header>
+
+        <article class="story-card grid" data-fade>
+          <div class="story-card__year" aria-hidden="true"><span>2024</span><small>→ 2026</small></div>
+          <div class="story-card__body">
+            <p class="mono dim">2024 – 2026 · Sousse</p>
+            <h3>École Polytechnique de Sousse</h3>
+            <p class="story-card__sub">Cycle ingénieur en informatique</p>
+            <p class="story-card__text">Spécialité : Data Science &amp; Intelligence Artificielle.</p>
+            <ul class="tags mono"><li>Data Science</li><li>Intelligence Artificielle</li></ul>
+          </div>
+        </article>
+        <article class="story-card story-card--next grid" data-fade>
+          <div class="story-card__year" aria-hidden="true"><span>2022</span><small>→ 2024</small></div>
+          <div class="story-card__body">
+            <p class="mono dim">2022 – 2024 · Monastir</p>
+            <h3>IPEIM</h3>
+            <p class="story-card__sub">Institut préparatoire aux études d’ingénieur – Monastir</p>
+            <p class="story-card__text">Formation solide en Mathématiques et Informatique.</p>
+            <ul class="tags mono"><li>Mathématiques</li><li>Informatique</li></ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======================= 04 COMPÉTENCES ======================= -->
+    <section class="chapter" id="competences" data-story data-sky="afternoon" data-hour="16" data-label="Compétences">
+      <div class="wrap">
+        <header class="chapter__head grid">
+          <div class="chapter__meta mono"><span class="chip">04</span><span class="dim">Compétences</span></div>
+          <div class="chapter__titles">
+            <h2 class="chapter__title" data-split>Compétences</h2>
+          </div>
+        </header>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track" data-marquee>
+          <span>Python</span><i>✦</i><span>Pandas</span><i>✦</i><span>NumPy</span><i>✦</i><span>Scikit-learn</span><i>✦</i><span><em>Machine Learning</em></span><i>✦</i><span>Deep Learning</span><i>✦</i><span>Matplotlib</span><i>✦</i><span>SQL</span><i>✦</i>
+        </div>
+      </div>
+      <div class="marquee marquee--rev" aria-hidden="true">
+        <div class="marquee__track" data-marquee>
+          <span>Java</span><i>✦</i><span>C++</span><i>✦</i><span>PHP</span><i>✦</i><span>Angular</span><i>✦</i><span><em>PostgreSQL</em></span><i>✦</i><span>MongoDB</span><i>✦</i><span>Symfony</span><i>✦</i><span>Git</span><i>✦</i><span>Figma</span><i>✦</i>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <figure class="panel" data-panel="dots" data-fade>
+          <canvas></canvas>
+          <div class="panel__title">Data <span class="panel__x">·</span> Code <span class="panel__x">·</span> <em>Design</em></div>
+          <figcaption class="panel__cap mono"><span>8 domaines</span><span>Compétences</span></figcaption>
+        </figure>
+        <div class="cards">
+          <article class="card" data-fade><span class="card__n mono">01</span><h3>Data Science &amp; IA</h3><p>Pandas, NumPy, Matplotlib, Scikit-learn, Machine Learning, Deep Learning</p></article>
+          <article class="card" data-fade><span class="card__n mono">02</span><h3>Langages de programmation</h3><p>Python, Java, C++, PHP, SQL</p></article>
+          <article class="card" data-fade><span class="card__n mono">03</span><h3>Développement logiciel</h3><p>Conception d’applications, contrôle de version (Git)</p></article>
+          <article class="card" data-fade><span class="card__n mono">04</span><h3>Databases</h3><p>MySQL, PostgreSQL, MongoDB, SQLite</p></article>
+          <article class="card" data-fade><span class="card__n mono">05</span><h3>Technologies Web</h3><p>HTML, CSS, JavaScript, Angular, Symfony</p></article>
+          <article class="card" data-fade><span class="card__n mono">06</span><h3>Outils et méthodologies</h3><p>Jira, Agile, Scrum, project management, problem-solving</p></article>
+          <article class="card" data-fade><span class="card__n mono">07</span><h3>Design &amp; Tools</h3><p>UI/UX Design (Figma)</p></article>
+          <article class="card" data-fade><span class="card__n mono">08</span><h3>Soft Skills</h3><p>Travail en équipe, sens de la communication, curiosité, adaptabilité, autonomie</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= 05 CERTIFICATIONS ======================= -->
+    <section class="chapter" id="certifications" data-story data-sky="sunset" data-hour="18.75" data-label="Certifications">
+      <div class="wrap">
+        <header class="chapter__head grid">
+          <div class="chapter__meta mono"><span class="chip">05</span><span class="dim">Certifications</span></div>
+          <div class="chapter__titles">
+            <h2 class="chapter__title" data-split>Certifi&shy;cations</h2>
+          </div>
+        </header>
+
+        <ol class="works">
+          <li class="work grid" data-fade>
+            <span class="work__n mono">01</span>
+            <div class="work__main"><h3>Microsoft Azure AI Fundamentals (AI-900)</h3><p>Certification attestant de mes connaissances fondamentales en intelligence artificielle, Machine Learning et services d’IA sur Microsoft Azure.</p></div>
+            <ul class="tags mono"><li>Microsoft</li><li>2026</li></ul>
+          </li>
+          <li class="work grid" data-fade>
+            <span class="work__n mono">02</span>
+            <div class="work__main"><h3>Unsupervised Learning in Python</h3><p>Formation suivie en apprentissage non supervisé avec Python : clustering et réduction de dimension.</p></div>
+            <ul class="tags mono"><li>DataCamp</li><li>Mars 2026</li></ul>
+          </li>
+          <li class="work grid" data-fade>
+            <span class="work__n mono">03</span>
+            <div class="work__main"><h3>Supervised Learning with scikit-learn</h3><p>Formation suivie en apprentissage supervisé avec scikit-learn : classification, régression et évaluation de modèles.</p></div>
+            <ul class="tags mono"><li>DataCamp</li><li>Mars 2026</li></ul>
+          </li>
+          <li class="work grid" data-fade>
+            <span class="work__n mono">04</span>
+            <div class="work__main"><h3>LinkedIn — Création de contenu &amp; personal branding</h3><p>Formation en création de contenu et personal branding sur LinkedIn, animée par Linda Schell à l’École Polytechnique de Sousse.</p></div>
+            <ul class="tags mono"><li>LinkedIn</li><li>Polytechnique Sousse</li></ul>
+          </li>
+          <li class="work grid" data-fade>
+            <span class="work__n mono">05</span>
+            <div class="work__main"><h3>« PSC 2k25 » — Engineering Impact, Empowering Humanity</h3><p>Reconnue comme membre engagée de l’équipe PSC pour avoir mené un projet d’ingénierie collaboratif à fort impact communautaire, mettant en avant des compétences en leadership et en travail d’équipe.</p></div>
+            <ul class="tags mono"><li>Leadership</li><li>Travail d’équipe</li></ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ======================= 06 LANGUES ======================= -->
+    <section class="chapter chapter--short" id="langues" data-story data-sky="dusk" data-hour="20" data-label="Langues">
+      <div class="wrap">
+        <header class="chapter__head grid">
+          <div class="chapter__meta mono"><span class="chip">06</span><span class="dim">Langues</span></div>
+          <div class="chapter__titles">
+            <h2 class="chapter__title" data-split>Langues</h2>
+          </div>
+        </header>
+        <div class="langs">
+          <div class="lang" data-fade><span class="lang__code mono">FR</span><span class="lang__name">Français</span><span class="lang__lvl mono">Niveau B2 — DELF</span></div>
+          <div class="lang" data-fade><span class="lang__code mono">EN</span><span class="lang__name"><em>Anglais</em></span><span class="lang__lvl mono">Lu, écrit, parlé</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= CONTACT ======================= -->
+    <section class="contact" id="contact" data-story data-sky="night" data-hour="22.5" data-label="Contact">
+      <div class="wrap">
+        <div class="chapter__meta mono contact__meta"><span class="chip">07</span><span class="dim">Contact</span></div>
+        <h2 class="contact__title" data-split>Travaillons <em>ensemble.</em></h2>
+        <button class="contact__mail" type="button" data-copy="rymelzouari@gmail.com" data-magnetic>
+          <span>rymelzouari@gmail.com</span><span class="mono contact__hint">Copier l’adresse</span>
+        </button>
+        <ul class="contact__grid mono">
+          <li><span class="dim">Téléphone</span><a href="tel:+21652460562">+216 52 460 562</a></li>
+          <li><span class="dim">LinkedIn</span><a href="https://linkedin.com/in/rimel-zouari" target="_blank" rel="noopener">linkedin.com/in/rimel-zouari ↗</a></li>
+          <li><span class="dim">GitHub</span><a href="https://github.com/rimelz" target="_blank" rel="noopener">github.com/rimelz ↗</a></li>
+          <li><span class="dim">Localisation</span><span>Sousse, Tunisie</span></li>
+        </ul>
+      </div>
+      <footer class="footer mono">
+        <span>© 2026 Rimel Zouari</span>
+        <span data-clock-full>Sousse</span>
+        <a href="#top" data-link>Retour en haut ↑</a>
+      </footer>
+    </section>
+  </main>
+
+  <div class="toast mono" role="status" aria-live="polite"></div>
+
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
